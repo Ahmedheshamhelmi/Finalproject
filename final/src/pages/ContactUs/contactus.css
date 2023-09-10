@@ -1,0 +1,24 @@
+.contact-us{
+    padding: 14rem 6rem 6rem 6rem;
+    background-image: linear-gradient(120deg, #66a6ff 0%, #89f7fe 100%);
+}
+input,textarea{
+    border-color: var(--textcolor) !important;
+}
+.box{
+    padding: 40px 70px;
+    background: #fff;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.submit-btn{
+    background-color: var(--maincolor) !important;
+    border-radius: 15px !important;
+}
+.submit-btn:hover{
+    background-color: var(--bgcolor) !important;
+    color: var(--maincolor) !important;
+}
+.w-85{
+    width: 98% !important;
+}

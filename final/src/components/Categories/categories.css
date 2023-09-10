@@ -1,0 +1,22 @@
+/** Categories Section Start  */
+.category img{
+    /* width: 250px; */
+    height: 96%;
+    width: 96%;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0,0.3) 0px 0px 16px
+}
+.category h3{
+    font-size: 18px;
+    font-weight: 700;
+    top: 20px;
+    left: 20px;
+    color: #000 !important;
+}
+@media only screen and (max-width: 768px) {
+    .category h3{
+        font-size: 12px;
+
+    }
+}
+/** Categories Section End   */

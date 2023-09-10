@@ -1,0 +1,66 @@
+.footer {
+background: linear-gradient(105deg,#6e99e6 ,#093c94);
+padding-top: 80px;
+padding-bottom: 40px;
+}
+.dw img{
+    width: 100px;
+    height: 30px;
+}
+.dw p{
+    font-size: 15px;
+}
+.link{
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+.link a:hover {
+    text-decoration: underline!important;
+}
+.logo{
+    width: 50px;
+}
+.third-section p{
+    color: #fff;
+    font-size: 20px;
+}
+.third-section .social-links{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.third-section .social-links .social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--maincolor);
+    border-radius: 50%;
+    padding: 5px 12px;
+    transition: all 0.4s ease ;
+}
+.third-section .social-links .social-container:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+}
+.third-section .social-links .social-container a i{
+    font-size: 25px;
+    color: #fff;
+    transition: all 0.4s ease ;
+}
+.third-section .social-links .social-container a i:hover{
+    color: var(--maincolor);
+}
+.third-section input[type=email]::placeholder{
+    color: var(--maincolor);
+}
+.subscribe{
+    background: #fff !important;
+    font-weight: bold !important;
+    color: var(--maincolor) !important;
+    box-shadow: inset 0 0 0 0 var(--bgcolor);
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out !important;
+}
+.subscribe:hover{
+    box-shadow: inset 400px 0 0 0 var(--maincolor);
+    color: #fff !important;
+}

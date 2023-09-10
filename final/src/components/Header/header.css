@@ -1,0 +1,123 @@
+/** Upper Header Start  */
+.top-header{
+    background-color: #fff;
+    z-index: 10;
+    transition: top 0.6s
+}
+.logo img{
+    height: 50px;
+}
+.search{
+    border-radius: 4px;
+}
+.search input[type=text]{
+    border-color: var(--textcolor);
+    border-radius: 15px;
+    padding: 8px 15px;
+}
+.search input[type=text]::placeholder{
+    color: var(--maincolor);
+}
+.search span{
+    border-color: var(--textcolor);
+    border-radius: 15px;
+    background-color: var(--bgcolor);
+}
+.link-item{
+    display: flex !important;
+    align-items: center;
+    width: calc(100% / 3);
+    justify-content: center;
+
+}
+.link-item i{
+    font-size: 26px;
+}
+.dropdown-content li{
+    margin-left: 10px;
+}
+.dropdown-content{
+    display:none;
+    border-radius: 5px;
+    position: absolute;
+    width: 80%;
+    padding:10px;
+    font-weight: bold;
+    top: 48px;
+    z-index: 5;
+    background: #fff !important;
+    list-style: none !important;
+    box-shadow:2px 2px 10px #ddd;
+    border: 2px solid var(--maincolor);
+    color: var(--maincolor);
+}
+.link-item:hover .dropdown-content{
+    display: block;
+    cursor: pointer;
+}
+.login{
+    padding-right: 10% ;
+}
+.cart{
+    background-color: var(--maincolor);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+.cart .quantity{
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    padding-right: 2px;
+}
+/** Upper Header End  */
+
+/** Lower Header Start  */
+.header-links{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+.header-links .item-link{
+    padding: 16px 20px 15px 16px;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+    box-shadow: inset 0 0 0 0 var(--bgcolor);
+    color: var(--maincolor);
+    border-radius: 10px;
+}
+.header-links .item-link a{
+    text-decoration: none;
+    color: var(--maincolor);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 3px 2px;
+
+}
+.header-links .item-link:hover{
+    transform: scale(1.05);
+    box-shadow: inset 300px 0 0 0 var(--bgcolor);
+    color: white;
+}
+.header-links .categoriy-icon{
+    height: 26px;
+}
+
+
+
+/** Lower Header End   */
+
+.scrollBtn{
+    position: fixed; 
+    /* left: 95%; */
+    /* right: 1.5%; */
+    bottom: 5%;
+    font-size: 2.7rem;
+    z-index: 1;
+    cursor: pointer;
+    color: var(--maincolor);
+    transition: all 0.6s ease-in-out;
+}
+.scrollBtn:hover{
+    transform: scale(1.1);
+}

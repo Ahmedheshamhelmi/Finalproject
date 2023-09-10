@@ -1,0 +1,13 @@
+/** Benefits Section Start  */
+.benefits-section{
+    background-color: #fff;
+    box-shadow: 0 0 10px #0000001a;
+}
+.benefits-section h6{
+    margin-bottom: 0;
+}
+.benefits-section p{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+/** Benefits Section End  */

@@ -1,0 +1,176 @@
+.prod-img{
+    height: 200px;
+}
+
+.badge-overlay {
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 100;
+    -webkit-transition: width 1s ease, height 1s ease;
+    -moz-transition: width 1s ease, height 1s ease;
+    -o-transition: width 1s ease, height 1s ease;
+    transition: width 0.4s ease, height 0.4s ease
+}
+.badge {
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding: 10px 10px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: none !important;
+    background: #ed1b24;
+}
+.badge.red {
+    background: #ed1b24;
+}
+.badge::before, .badge::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    margin: 0 -4px;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    min-width: 55px
+}
+
+.badge::before {
+    right: 100%
+}
+
+.badge::after {
+    left: 100%
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -ms-transform: translateX(-30%) translateY(0%) rotate(-45deg);
+    -webkit-transform: translateX(-30%) translateY(0%) rotate(-45deg);
+    transform: translateX(-30%) translateY(0%) rotate(-45deg);
+    -ms-transform-origin: top right;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+}
+
+
+.product-badge-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    .product-badge {
+        position: relative;
+        width: 100px;
+        overflow: hidden;
+        &.color {
+        &:before,
+        &:after {
+            border-color: var(--maincolor);
+            background-color: transparent;
+        }
+        &:after {
+            background-color: transparent;
+            border-left-color: transparent;
+        }
+        .product-badge-content {
+            &:before {
+            border-color:var(--maincolor);
+            border-left-color: transparent;
+            border-right-color: transparent;
+            }
+        }
+        }
+        &.dark-gray {
+        &:before,
+        &:after {
+            border-color: #000;
+            background-color: transparent;
+        }
+        &:after {
+            background-color: transparent;
+            border-left-color: transparent;
+        }
+        .product-badge-content {
+            &:before {
+            border-color: #000;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            }
+        }
+        }
+        &:before,
+        &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        background-color: transparent;
+        border-color: lighten(#000, 73%);
+        }
+        &:before {
+        top: 20px;
+        right: 0;
+        bottom: 0;
+        }
+        &:after {
+        bottom: auto;
+        left: -1px;
+        top: -10px;
+        border-style: solid;
+        border-width: 0 0 75px 75px;
+        background-color: transparent;
+        border-left-color: transparent;
+        width: 100px;
+        }
+        .product-badge-content {
+        height: 43px;
+        padding-top: 3px;
+        padding-right: 6px;
+        padding-left: 22px;
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 10;
+        color: #fff;
+        &.text-small {
+            font-size: .7rem;
+            font-weight: 400 !important;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            left: 11px;
+            bottom: 0;
+            display: block;
+            border-style: solid;
+            border-color: lighten(#000, 37.4%);
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-width: 10px 10px 0 10px;
+        }
+        }
+    }
+}
+
+.bestseller-badge{
+    position: absolute;
+    left: 5% ;
+    top: 3%;
+}
+.bestseller-badge img{
+    width: 60px !important;
+    height: 60px !important;
+}

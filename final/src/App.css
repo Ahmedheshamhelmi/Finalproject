@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor:#0E5AA7;
+    --textcolor:#3bace5;
+    --bgcolor:#0e5aa70d;
+}
+.maincolor{
+    color: var(--maincolor) !important;
+}
+.textcolor{
+    color: var(--textcolor);
+}
+.bgcolor{
+    color: var(--bgcolor);
+}
+a{
+    text-decoration: none!important;
+    display: inline-block;
+}
+p{
+    margin-bottom: 0;
+}
+ul{
+    list-style: none;
+}

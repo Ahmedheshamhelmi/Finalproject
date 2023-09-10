@@ -1,0 +1,23 @@
+.notfound-section{
+    padding-top: 140px;
+    background-color: #fff;
+}
+.notfound-section img{
+    width: 40%;
+    height: 40%;
+}
+.notfound-section h1{
+    font-weight: bold;
+    color: var(--maincolor);
+}
+.notfound-section .backtohome{
+    background-color: var(--maincolor) !important;
+    color: #fff !important;
+    font-weight: bold !important;
+}
+.notfound-section .backtohome:hover{
+    background-color: var(--bgcolor) !important;
+    color: var(--maincolor) !important;
+    border: 1px solid var(--maincolor);
+}
+
